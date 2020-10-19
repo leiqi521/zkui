@@ -1,9 +1,9 @@
-<#import "layouts/login-layout.ftl.html" as main>
-<@main.page>
+<#include "layouts/login-layout.html">
+<@page>
 
 <div class="container">
 
-    <form method="post" action="/login">
+    <form method="post" action="/form">
         <div class="row">
             <div class="col-md-4">
                 &nbsp;
@@ -33,4 +33,4 @@
     </form>
 
 </div> <!-- /container -->
-</@main.page> 
+</@page>

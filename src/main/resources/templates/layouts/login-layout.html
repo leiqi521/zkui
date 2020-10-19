@@ -1,15 +1,16 @@
 <#macro page>
 <html>
     <head>
-        <#include "../common/include.ftl.html"/>
+        <#include "../common/include.html"/>
     </head>
     <body>
         <div id="wrap">
-            <#include "../common/menubar.ftl.html"/>
+            <#include "../common/login-menubar.html"/>
             <!-- Content starts -->
             <#nested>
             <!-- Content ends -->
-        </div>        
+        </div>    
+        <#include "../common/footer.html"/>
     </body>
 </html>
 </#macro>

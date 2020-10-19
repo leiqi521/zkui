@@ -28,7 +28,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         http.formLogin() //表单方式，或httpBasic
                 .loginPage("/loginPage")
                 .loginProcessingUrl("/form")
-                .defaultSuccessUrl("/index") //成功登陆后跳转页面
+                .defaultSuccessUrl("/home") //成功登陆后跳转页面
                 .failureUrl("/loginError")
                 .permitAll()
                 .and();

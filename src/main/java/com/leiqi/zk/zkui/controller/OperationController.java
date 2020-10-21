@@ -25,7 +25,8 @@ public class OperationController {
     private CuratorFramework zkClient;
 
     @GetMapping("/loginPage")
-    public String loginPage() {
+    public String loginPage(ModelMap map) {
+        map.addAttribute("loginMessage","Please login using admin/123456 or test/test123");
         return "login_page";
     }
 

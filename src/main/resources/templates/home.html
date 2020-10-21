@@ -57,10 +57,10 @@
                         <#list leafLst as leaf>
                         <tr>
                             <td>
-                                <input type="checkbox" name="propChkGroup" value="${currentPath}${leaf.name?html}"/>
+                                <input type="hidden" name="propChkGroup" value="${currentPath}${leaf.name?html}"/>
                             </td>
                             <td>
-                                <#if authRole?? && authRole == 'ADMIN' >
+                                <#if authRole?? && authRole == 'ROLE_ADMIN' >
                                 <#if leaf.value??>
                                 <a href="#" data-toggle="modal" class="href-select" data-target="#addPropertyModal" itemprop="${leaf.strValue?html}" >${leaf.name}</a> 
                                 <#else>
@@ -161,7 +161,6 @@
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                <input type="submit" id="savePropertyBtn" name="action" value="Save Property" class="btn btn-primary"/>
                                 <input type="submit" id="updatePropertyBtn" name="action" value="Update Property" class="btn btn-primary"/>
                             </div>
                         </div>

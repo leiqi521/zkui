@@ -10,23 +10,22 @@
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
                 <#if displayPath??>
-                <li><a href="/home?zkPath=/appconfig/hosts&navigate=true">Hosts</a></li>
+<#--                <li><a href="/home?zkPath=/appconfig/hosts&navigate=true">Hosts</a></li>-->
 
                 <#if authRole?? && authRole == 'ROLE_ADMIN' >
                 <li><a href="#" data-toggle="modal" data-target="#addNodeModal">Add Node</a></li>
-                <li><a href="#" data-toggle="modal" data-target="#addPropertyModal" id="addPropertyBtn">Add Property</a></li>
                 <li><a href="#" data-toggle="modal" data-target="#deleteModal">Delete</a></li>
-                <li><a href="#" data-toggle="modal" data-target="#importModal">Import</a></li>
+<#--                <li><a href="#" data-toggle="modal" data-target="#importModal">Import</a></li>-->
                 </#if> 
 
-                <li><a href="/export?zkPath=${displayPath}" target="_blank">Export</a></li>
+<#--                <li><a href="/export?zkPath=${displayPath}" target="_blank">Export</a></li>-->
                 <li><a href="#" data-toggle="modal" data-target="#searchModal">Search</a></li>
-                <li><a href="/history">History</a></li>
-                <li><a href="/monitor">Monitor</a></li>
+<#--                <li><a href="/history">History</a></li>-->
+<#--                <li><a href="/monitor">Monitor</a></li>-->
 
                 <#else>
-                <li><a href="/history">History</a></li>
-                <li><a href="/monitor">Monitor</a></li>
+<#--                <li><a href="/history">History</a></li>-->
+<#--                <li><a href="/monitor">Monitor</a></li>-->
                 </#if> 
 
             </ul>
